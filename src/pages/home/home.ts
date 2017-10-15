@@ -21,7 +21,7 @@ export class HomePage {
         let body = res.json();
         return body || {};
       })
-      .subscribe(pokes => this.pokes = pokes);
+      .subscribe(pokes => this.pokes = pokes.results);
   }
 
 }
